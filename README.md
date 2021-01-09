@@ -28,6 +28,8 @@ For the purpose of this application we will be interested in the below informati
 2. **Django** : Django framework will be used to create the back-end of the application.
 3. **Rest Framework** : Rest Framework is used along with Django to develop the Rest API Architecture.
 4. **TextBlob** : Text Blob package from python will be used to perform Natural Language Processing.
+5. **Sqlite3** : Current version will use Sqlite 3 Database provided by Django framework itself.
+6. **Docker** : Docker will be used for running the application in docker container.
 
 ## API References
 
@@ -46,4 +48,45 @@ Base URL : https://localhost:8000/textsight-api/
 
 ## High Level Design for Development
 
+We will have the below models for our Django Application.
+
+    TagInfo
+        - title : CharField
+
+    ProcessedText
+        - text : TextField
+        - polarity : CharField
+        - polarity_score : DecimalField
+        - subjectivity : CharField
+        - subjectivity_score : DecimalField
+
+        - tag : ForeignKey ManyToMany TagInfo
+
+All the data will be stored using ProcessedText Model.
+
+Tags extracted from the text will be stored separately using TagInfo model creating a many to many relationship with ProcessedText.
+
+## Use case Design
+
+Below diagram depicts a simple use case scenario and flow of processing.
+![Use case design image](images/textsight-usecase.png)
+
 ## Project setup
+
+### Prerequisites
+
+* Docker Engine should be installed on the local system, if one intends to run the application locally. For details on installation : ![Check out this link!](https://docs.docker.com/engine/install/)
+
+### Running the application
+
+Open terminal and execute the following command :
+
+    $ docker-compose up
+
+## Key Learnings
+
+The primary idea for this project is to enhance the existing python, docker, Django and NLP skills.
+
+## Future Improvements
+
+In future the architecture will be enchanced to support multiple end-points and improve performance of existing application to support multiple requests.

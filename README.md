@@ -9,7 +9,7 @@ The idea is to have an application that allow its users to perform Natural Langu
 
 ### What is Natural Language Processing ?
 
-Natural Language Processing, usually shortened as NLP, is a branch of artificial intelligence that deals with the interaction between computers and humans using the natural language. The ultimate objective of NLP is to read, decipher, understand, and make sense of the human languages in a manner that is valuable. For more information : ![Check out this article](https://becominghuman.ai/a-simple-introduction-to-natural-language-processing-ea66a1747b32)
+Natural Language Processing, usually shortened as NLP, is a branch of artificial intelligence that deals with the interaction between computers and humans using the natural language. The ultimate objective of NLP is to read, decipher, understand, and make sense of the human languages in a manner that is valuable. For more information : [Check out this article](https://becominghuman.ai/a-simple-introduction-to-natural-language-processing-ea66a1747b32)
 
 ### What is the valuable information that can be achieved from the text ?
 
@@ -75,7 +75,7 @@ Below diagram depicts a simple use case scenario and flow of processing.
 
 ### Prerequisites
 
-* Docker Engine should be installed on the local system, if one intends to run the application locally. For details on installation : ![Check out this link!](https://docs.docker.com/engine/install/)
+* Docker Engine should be installed on the local system, if one intends to run the application locally. For details on installation : [Check out this link!](https://docs.docker.com/engine/install/)
 
 ### Running the application
 
